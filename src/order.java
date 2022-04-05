@@ -3,10 +3,11 @@ import java.util.ArrayList;
 public class order {
 
     public int order_id;
-    public String Company;
-    public String registerDate;
+    public static String Company;
+    public static String registerDate;
     public static ArrayList<Medicine> MedicineList;
     public static ArrayList<Integer> QuantityList;
+
 
     // Constructor for get details:
     public order(int order_id) {
@@ -35,21 +36,17 @@ public class order {
         System.out.println("Element has been Successfully added");
     }
 
-
     public void removeElement(Medicine removedMedicine){
         order.MedicineList.remove(removedMedicine);
         System.out.println("Element has been Successfully removed");
         }
 
-
-
-
-   public void calcTotalCost() {
+    public void calcTotalCost() {
         double total =0;
         for (Medicine medicine: order.MedicineList){
-            total =+ medicine.price;
+            total += medicine.price;
         }
-       System.out.println("\t The Order Total Cost:" + total);
+       System.out.println("\t Order Total Cost:" + total);
    }
 
 
