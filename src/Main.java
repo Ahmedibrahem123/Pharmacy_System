@@ -90,8 +90,7 @@ public class Main {
       Admin.companyList.add(c7);
       Admin.companyList.add(c8);
       Admin.companyList.add(c9);
-      Admin.companyList.add(c10);}
-    }
+      Admin.companyList.add(c10);}}
     public static void pharmacist() {
      Scanner scanner = new Scanner(System.in);
      //scanner for string values:
